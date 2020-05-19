@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Weahther Dashboard</title>
+    <!-- Bootstrap CSS CDN  -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/css/bootstrap.min.css"
+    />
+
+    <!-- Font Awesome CSS Icons (For cool glyphicons) -->
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css"
+    />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="./style.css" type="text/css" />
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.js" integrity="sha256-DrT5NfxfbHvMHux31Lkhxg42LY6of8TaYyK50jnxRnM=" crossorigin="anonymous"></script>
+
+  </head>
+
+  <body>
+    <!-- Jumbotron for Title -->
+    <div class="jumbotron" style="background-color: #20315a; color: white;">
+      <h1 class="display-4 text-center">Weahter Dashboard</h1>
+    </div>
+
+    <!-- Search for City -->
+    <div class="container">
+      <div class="row r1">
+        <div class="col-md-4 c1">
+          <i class="fa fa-globe" style="font-size: 1.5rem;">
+            Search for a City:
+          </i>
+
+          <form id="city-form">
+            <input type="text" id="city-input" />
+            <button type="button" id="city-btn" class="btn btn-primary">
+              <i class="fa fa-search"></i>
+            </button>
+          </form>
+
+          <!-- City Search History -->
+          <div class="city-history">
+            <ul class="list-group"></ul>
+          </div>
+
+
+          <!-- End of First Column-->
+        </div>
+
+        <div class="col-md-8 c2">
+          <div class="r2-top">
+            <h2 class="city">City</h2>
+            <p class="temp"></p>
+            <p class="humidity"></p>
+            <p class="wind-speed"></p>
+            <p class="uv-index"></p>
+
+            <!-- End of r2-top -->
+          </div>
+          </br>
+
+          <!-- <div class="r2-bott"> -->
+        
+          <div class="r2-bott">
+              <h2 class="r2-b-heading">5-Day Forecast:</h2>
+
+              <div class="row r2-b-content justify-content-between">
+
+              <div class="col-md-2">
+                <div class="card" style="width: 8rem;">
+                  <div class="card-body">
+                    <h4 class="card-title day-1"></h4>
+                    <p class="card-text icon-1"></p>
+                    <p class="card-text temp-1"></p>
+                    <p class="card-text humidity-1"></p>
+                    <!--End of card-body-->
+                  </div>
+                  <!--End of card class-->
+                </div>
+                <!--End of first column or day 1-->
+              </div>
+
+              <div class="col-md-2">
+                <div class="card" style="width: 8rem;">
+                  <div class="card-body">
+                    <h4 class="card-title day-2"></h4>
+                    <p class="card-text icon-2"></p>
+                    <p class="card-text temp-2"></p>
+                    <p class="card-text humidity-2"></p>
+                    <!--End of card-body-->
+                  </div>
+                  <!--End of card class-->
+                </div>
+                <!--End of first column or day 2-->
+              </div>
+
+              <div class="col-md-2">
+                <div class="card" style="width: 8rem;">
+                  <div class="card-body">
+                    <h4 class="card-title day-3"></h4>
+                    <p class="card-text icon-3"></p>
+                    <p class="card-text temp-3"></p>
+                    <p class="card-text humidity-3"></p>
+                    <!--End of card-body-->
+                  </div>
+                  <!--End of card class-->
+                </div>
+                <!--End of first column or day 3-->
+              </div>
+
+              <div class="col-md-2">
+                <div class="card" style="width: 8rem;">
+                  <div class="card-body">
+                    <h4 class="card-title day-4"></h4>
+                    <p class="card-text icon-4"></p>
+                    <p class="card-text temp-4"></p>
+                    <p class="card-text humidity-4"></p>
+                    <!--End of card-body-->
+                  </div>
+                  <!--End of card class-->
+                </div>
+                <!--End of first column or day 4-->
+              </div>
+
+              <div class="col-md-2">
+                <div class="card" style="width: 8rem;">
+                  <div class="card-body">
+                    <h4 class="card-title day-5"></h4>
+                    <p class="card-text icon-5"></p>
+                    <p class="card-text temp-5"></p>
+                    <p class="card-text humidity-5"></p>
+                    <!--End of card-body-->
+                  </div>
+                  <!--End of card class-->
+                </div>
+                <!--End of first column or day 5-->
+              </div>
+              <!-- End of r2-b-content-->
+              </div> 
+          </div> <!--End of r2-bott-->    
+        <!-- End of 2nd column -->
+        </div>
+      <!-- End of first row -->
+      </div>
+    <!-- End of Container -->
+    </div>
+    <!-- jQuery JS -->
+    <script src="https://code.jquery.com/jquery.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/js/bootstrap.bundle.min.js"></script>
+    <!-- Code to the JavaScript File -->
+    <script src="script.js" type="text/JavaScript"></script>
+  </body>
+</html>
